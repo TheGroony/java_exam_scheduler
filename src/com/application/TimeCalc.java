@@ -10,7 +10,7 @@ public class TimeCalc {
 
     public static int differenceMin(String startHour, String startMinute, String endHour, String endMinute) {
         try {
-            SimpleDateFormat sdf = new SimpleDateFormat("hh:mm");
+            SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
             Date startTime = sdf.parse(startHour + ":" + startMinute);
             Date endTime = sdf.parse(endHour + ":" + endMinute);
             long diffMs = 0;
